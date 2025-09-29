@@ -253,7 +253,7 @@
   }
 }
 
-/* ________ GREENCHECK ________ */
+/* ________ RESOURCE ________ */
 
 .resSection {
   display: flex;
@@ -267,4 +267,19 @@
   height: 70vw;
   width: 100%;
   position: relative;
+  overflow: hidden;
+  /* will clip big circle only */
+}
+
+.resBigCircle {
+  width: 70vw;
+  height: 70vw;
+  margin-top: 28vw;
+  left: 50%;
+  border: 2px solid var(--dark-green);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.resCircle {
 }

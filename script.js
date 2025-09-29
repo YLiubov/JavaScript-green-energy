@@ -152,29 +152,24 @@ let resSection = document.createElement('section');
 resSection.classList.add('resSection');
 
 let resCircle = document.createElement('div');
-resCircle.classList.add('circle', 'lightCircle');
+resCircle.classList.add('circle', 'resCircle');
 
 let resBigCircle = document.createElement('div');
-bigCircle.classList.add('circle', 'resBigCircle')
+resBigCircle.classList.add('circle', 'resBigCircle')
 
 let anchorResText = document.createElement("p");
-anchorResText.textContent =
-  "RESOURCE";
+anchorResText.textContent = "RESOURCE";
 resCircle.appendChild(anchorResText);
 
 let resTitle = document.createElement('h2');
-resTitle.textContent =
-  "EVERY byte MATTERS";
-
+resTitle.textContent = "EVERY byte MATTERS";
 
 let resText = document.createElement('p');
-resText.textContent =
-  "We work towards a cleaner internet, free form as much carbon emision as possible. There are many yhings you can do as a web developer to help. Read more about how you can contribute here";
+resText.textContent = "We work towards a cleaner internet, free form as much carbon emision as possible. There are many yhings you can do as a web developer to help. Read more about how you can contribute here";
 
 let resList = document.createElement('ul')
 header.classList.add('resList')
-
-resList.innerHTML =  `
+resList.innerHTML = `
   <li>
     <a href="#">Substainable Web Design</a>
   </li>
@@ -185,10 +180,10 @@ resList.innerHTML =  `
     <a href="#">Website Carbon</a>
   </li>
 `
-
-resSection.appendChild(resCircle);
+grCheckSection.appendChild(resCircle);
 resSection.appendChild(resBigCircle);
 resSection.appendChild(resTitle);
 resSection.appendChild(resText);
 resSection.appendChild(resList);
 body.appendChild(resSection);
+
