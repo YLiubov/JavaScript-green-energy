@@ -105,6 +105,7 @@
   font-size: 2vw;
   text-align: center;
   outline: 0.1px solid var(--secondy-color);
+  z-index: 20;
 }
 
 .calcSection {
@@ -268,7 +269,6 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  /* will clip big circle only */
 }
 
 .resBigCircle {
@@ -281,5 +281,29 @@
   position: absolute;
 }
 
-.resCircle {
+.resSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+  background-color: var(--primary-color);
+  color: var(--lime-green);
+  height: 70vw;
+  width: 100%;
+  position: relative;
+
+  & h3 {
+    position: relative;
+    font-size: 1.5rem;
+    max-width: 500px;
+  }
+
+  & p {
+    max-width: 600px;
+    line-height: 1.4;
+  }
+
 }
+

@@ -152,7 +152,7 @@ let resSection = document.createElement('section');
 resSection.classList.add('resSection');
 
 let resCircle = document.createElement('div');
-resCircle.classList.add('circle', 'resCircle');
+resCircle.classList.add('circle', 'lightCircle');
 
 let resBigCircle = document.createElement('div');
 resBigCircle.classList.add('circle', 'resBigCircle')
@@ -163,9 +163,11 @@ resCircle.appendChild(anchorResText);
 
 let resTitle = document.createElement('h2');
 resTitle.textContent = "EVERY byte MATTERS";
+resTitle.classList.add('resTitle')
 
 let resText = document.createElement('p');
 resText.textContent = "We work towards a cleaner internet, free form as much carbon emision as possible. There are many yhings you can do as a web developer to help. Read more about how you can contribute here";
+resText.classList.add('resText')
 
 let resList = document.createElement('ul')
 header.classList.add('resList')
@@ -180,7 +182,9 @@ resList.innerHTML = `
     <a href="#">Website Carbon</a>
   </li>
 `
-grCheckSection.appendChild(resCircle);
+resList.classList.add('resList')
+
+resSection.appendChild(resCircle);
 resSection.appendChild(resBigCircle);
 resSection.appendChild(resTitle);
 resSection.appendChild(resText);
