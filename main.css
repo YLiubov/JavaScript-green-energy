@@ -256,6 +256,21 @@
 
 /* ________ RESOURCE ________ */
 
+.resGridCircle {
+  position: absolute;
+  width: 40vw;
+  height: 40vw; 
+  overflow: hidden;
+  background-color: aqua;
+  justify-content: flex-end;
+  }
+
+.resGridCircleTitle {
+  width: 70vw;
+  height: 70vw;
+  left: 50%;
+}
+
 .resSection {
   display: flex;
   flex-direction: column;
@@ -268,38 +283,11 @@
   height: 70vw;
   width: 100%;
   position: relative;
-  overflow: hidden;
-}
-
-.resBigCircle {
-  width: 70vw;
-  height: 70vw;
-  margin-top: 28vw;
-  left: 50%;
-  border: 2px solid var(--dark-green);
-  border-radius: 50%;
-  position: absolute;
-}
-
-.resSection {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 40px;
-  background-color: var(--primary-color);
-  color: var(--lime-green);
-  height: 70vw;
-  width: 100%;
-  position: relative;
-
   & h3 {
     position: relative;
     font-size: 1.5rem;
     max-width: 500px;
-  }
-
+  } 
   & p {
     max-width: 600px;
     line-height: 1.4;

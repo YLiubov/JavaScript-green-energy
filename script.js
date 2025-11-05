@@ -154,8 +154,11 @@ resSection.classList.add('resSection');
 let resCircle = document.createElement('div');
 resCircle.classList.add('circle', 'lightCircle');
 
-let resBigCircle = document.createElement('div');
-resBigCircle.classList.add('circle', 'resBigCircle')
+let resGridCircle = document.createElement('div');
+resGridCircle.classList.add('resGridCircle');
+
+let resGridCircleTitle = document.createElement('div');
+resGridCircleTitle.classList.add('circle', 'resGridCircleTitle');
 
 let anchorResText = document.createElement("p");
 anchorResText.textContent = "RESOURCE";
@@ -185,7 +188,8 @@ resList.innerHTML = `
 resList.classList.add('resList')
 
 resSection.appendChild(resCircle);
-resSection.appendChild(resBigCircle);
+resSection.appendChild(resGridCircle);
+resGridCircle.appendChild(resGridCircleTitle);
 resSection.appendChild(resTitle);
 resSection.appendChild(resText);
 resSection.appendChild(resList);
