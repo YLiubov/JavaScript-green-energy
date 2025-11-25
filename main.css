@@ -258,17 +258,21 @@
 
 .resGridCircle {
   position: absolute;
-  width: 40vw;
+  bottom: 0;
+  right: 0;
+  width: 60vw;
   height: 40vw; 
+
   overflow: hidden;
-  background-color: aqua;
+
   justify-content: flex-end;
   }
 
 .resGridCircleTitle {
   width: 70vw;
   height: 70vw;
-  left: 50%;
+  left: 20%;
+  top: 10%
 }
 
 .resSection {

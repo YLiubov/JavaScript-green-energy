@@ -195,3 +195,47 @@ resSection.appendChild(resText);
 resSection.appendChild(resList);
 body.appendChild(resSection);
 
+// ________ GREENCHECK dabl ________ 
+
+let missionSection = document.createElement('section');
+missionSection.classList.add('missionSection');
+
+let missionCircle = document.createElement('div');
+missionCircle.classList.add('circle', 'darkCircle');
+
+let anchorMissionText = document.createElement("p");
+anchorMissionText.textContent =
+  "THE MISSION";
+missionCircle.appendChild(anchorMissionText);
+
+
+let missionSub = document.createElement('h3');
+missionSub.textContent =
+  "We love the green energy and renewable energy sourses. Does your provider?";
+
+let missionText = document.createElement('p');
+missionText.textContent =
+  "Enter a website URL in the field below to look check if the site providers use green and renewable energy souces for hosting";
+
+let missionForm = document.createElement('form');
+missionForm.classList.add('missionForm');
+
+let missionInput = document.createElement('input');
+  missionInput.type = 'text';
+  missionInput.name = 'userName';
+  missionInput.placeholder = 'www.mywebsite.com';
+
+  missionForm.appendChild(missionInput);
+
+let missionButton = document.createElement('button')
+  missionButton.type = 'submit';
+  missionButton.textContent = 'BEGIN';
+
+  missionForm.appendChild(missionButton);
+
+
+missionSection.appendChild(missionCircle)
+missionSection.appendChild(missionSub)
+missionSection.appendChild(missionText)
+missionSection.appendChild(missionForm);
+body.appendChild(missionSection);
